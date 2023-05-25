@@ -7,23 +7,15 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='javascript.js'></script>
 </head>
 
-<body style="background-color: beige
-;">
-    Enter first name: <input id="firstName" type="text" name="name" /> <br> Enter Last name: <input id="lastName" type="text" name="name" /> <br>
+<body>
+    <label> Enter first name</label>: <input id="firstName" type="text" name="name" /> <br>
+    <label> Enter Last name</label>: <input id="lastName" type="text" name="name" /> <br>
 
-    <a href="index.html" onclick="return myFunc();" style="color: green;">Submit</a>
+    <button onclick="myFunc()">Submit</button>
+
 </body>
-<script>
-    function myFunc() {
-        var fid = document.getElementById("firstName").value;
-        var lid = document.getElementById("lastName").value;
-        console.log(fid);
-        console.log(lid);
-        alert(fid + lid);
-    }
-</script>
 
 </html>
