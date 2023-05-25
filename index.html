@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body style="background-color: beige
+;">
+    Enter first name: <input id="firstName" type="text" name="name" /> <br> Enter Last name: <input id="lastName" type="text" name="name" /> <br>
+
+    <a href="index.html" onclick="return myFunc();" style="color: green;">Submit</a>
+</body>
+<script>
+    function myFunc() {
+        var fid = document.getElementById("firstName").value;
+        var lid = document.getElementById("lastName").value;
+        console.log(fid);
+        console.log(lid);
+        alert(fid + lid);
+    }
+</script>
+
+</html>
